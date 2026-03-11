@@ -3,6 +3,11 @@ $(document).ready(function () {
         let n1 = parseFloat($("#n1").val());
         let n2 = parseFloat($("#n2").val());
         let operacao = $("input[name='operacao']:checked").val();
+
+        if (isNaN(n1) || isNaN(n2) || isNaN(operacao)) {
+            alert("Por favor, insira nrs válidos!");
+            return;
+        }
         let resultado = calcular(n1, n2, operacao);
 
         $("#resultado").html("Resultado: " + resultado);
