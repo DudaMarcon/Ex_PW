@@ -27,6 +27,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="contato.html">Contato</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="imc.html">IMC</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alunos.html">Integrantes</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -62,10 +68,18 @@
                     <input class="form-check-input" type="radio" name="operacao" value="div">
                     <label class="form-check-label">Divisão</label>
                 </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="operacao" value="par">
+                    <label class="form-check-label">Valor 1: Par ou ímpar</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="operacao" value="negat">
+                    <label class="form-check-label">Valor 1: Negativo ou Positivo</label>
+                </div>
                 <button id="calcular" class="btn btn-success mt-3">
                     Calcular
                 </button>
-                <button id="limpar" class="btn btn-warning mt-3">
+                <button id="limpar" class="btn btn-warning mt-3" onclick="limpar()">
                     Limpar
                 </button>
                 <div class="alert alert-info mt-3" id="resultado">
