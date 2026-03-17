@@ -34,24 +34,9 @@ else if (resultado >= 40){
 function calcular(alt, pes) {
      return pes / (alt * alt);
 }
+function limpar() {
+    $("#alt").val("");
+    $("#pes").val("");
+    $("#alt").focus();
+    $("#resultado").html("Resultado: "); }
 
-
-/*$("#calcular").click(function () {
-
-    let alt = parseFloat($("#alt").val());
-    let pes = parseFloat($("#pes").val());
-
-    if (isNaN(alt) || isNaN(pes)) {
-        $("#resultado").html("Digite valores válidos!");
-        return;
-    }
-
-    let resultado = calcular(alt, pes);
-
-    $("#resultado").html("Resultado: " + resultado.toFixed(2));
-});
-
-function calcular(alt, pes) {
- 
-    return pes / (alt * alt);
-}*/ 
